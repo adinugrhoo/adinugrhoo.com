@@ -180,6 +180,7 @@ button:focus,
     overflow   : hidden;
     position   : fixed;
     left       : 0;
+    /* background-color: #333333; */
     }
 
 .right-col-block {
