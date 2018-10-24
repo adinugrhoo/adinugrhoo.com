@@ -72,7 +72,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #2a54f5;
+    color              : #2c2c2c;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -88,15 +88,27 @@ a:active {
     outline         : none
     }
 
-a:hover,
+a:hover {
+    text-decoration : none;
+    background-color: #3dc1c33d;
+    color           : #3dc1c3;  
+}
 a:focus {
     text-decoration : none;
-    color           : #2a54f5;
+    color           : #2c2c2c;
     }
 
 p {
     margin-bottom : 20px;
+    text-align    : justify;
+    font-weight   : 200;
+    color         : #3f3f3f; 
+    /* font-size     : 18px;   */
     }
+
+.special {
+    font-weight   : 600; 
+}
 
 ul {
     margin     : 0;
@@ -237,9 +249,10 @@ button:focus,
     margin-bottom : 15px;
     }
 
-.section-title h2 {
+.section-title h1 {
     margin-bottom : 5px;
-    color         : #bebece;
+    font-weight   : 600; 
+    color         : #3f3f3f !important;
     }
 
 /*-----------------------------
@@ -256,13 +269,15 @@ button:focus,
 
 .header .profile-img {
     position            : absolute;
-    top                 : 30%;
-    left                : 60%;
-    width               : 43%;
-    height              : 43%;
-    background-image    : url(../img/adinugroho.png);
+    top                 : 20%;
+    left                : 25%;
+    width               : 48%;
+    height              : 60%;
+    background-image    : url(../img/newava.jpg);
     background-size     : cover;
     background-position : center top;
+    border-radius       : 8px; 
+    box-shadow          : 0 29px 34px 0 rgba(0, 0, 0, 0.07);
     }
 
 .header .content {
@@ -315,7 +330,7 @@ button:focus,
 .header .content .social-icon li a {
     display       : block;
     font-size     : 12px;
-    color         : #ffffff;
+    color         : #2b2b2b;
     width         : 34px;
     height        : 34px;
     line-height   : 33px;
@@ -361,46 +376,6 @@ button:focus,
  * Skills Progressbar
  *-------------------*/
 
-.progress-item {
-    position : relative;
-    }
-
-.progress-item .progress-title {
-    font-size     : 15px;
-    font-weight   : 400;
-    display       : inline-block;
-    margin-bottom : 5px;
-    }
-
-.progress-item .progress {
-    height        : 4px;
-    box-shadow    : none;
-    border-radius : 5px;
-    }
-
-.progress-item .progress-bar {
-    background-color : #2a54f5;
-    box-shadow       : none;
-    text-align       : right;
-    }
-
-.progress-item .progress-percent {
-    font-size        : 10px;
-    background-color : #313131;
-    position         : absolute;
-    top              : 5px;
-    padding          : 0 8px;
-    border-radius    : 3px;
-    }
-
-.progress-item .progress-percent::before {
-    content      : "";
-    position     : absolute;
-    left         : 0;
-    bottom       : -4px;
-    border-top   : 6px solid #313131;
-    border-right : 8px solid transparent;
-    }
 
 /*-------------------
  * Portfolio
@@ -531,7 +506,7 @@ button:focus,
  * Preloader
  * ====================*/
 #preloader {
-    background : #2a54f5;
+    background : #3dc1c3;
     bottom     : 0;
     left       : 0;
     position   : fixed;
